@@ -24,3 +24,30 @@ a:hover {
 }
 /*first header part ends*/
 
+/*footer part starts*/
+.icons a {
+    text-decoration: none;
+}
+
+footer i:hover {
+    transition: all 0.3s;
+    color: #1b1b1b;
+}
+
+footer a:hover i:hover {
+    font-size: 18px;
+}
+
+.products p a:hover {
+    font-size: 18px;
+}
+
+.links p a:hover {
+    font-size: 18px;
+}
+
+.contact p:hover {
+    font-size: 18px;
+}
+
+/*footer part ends*/
