@@ -1,114 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-   <head>
-      <meta charset="UTF-8" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-      <!--Bootstrap link start-->
-      <link
-         href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-         rel="stylesheet"
-         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-         crossorigin="anonymous"
-      />
-      <script
-         src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-         crossorigin="anonymous"
-      ></script>
-      <!--Bootstrap link ends-->
-
-      <!--Font Awesome link starts-->
-      <link
-         rel="stylesheet"
-         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-         integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
-         crossorigin="anonymous"
-         referrerpolicy="no-referrer"
-      />
-      <!--Font Awesome link ends-->
-
-      <!--CSS link starts-->
-      <link rel="stylesheet" href="style/style.css" />
-      <!--CSS link ends-->
-
-      <!--Favicon link starts-->
-      <link rel="icon" href="./assets/logos/favicon.png" type="image/x-icon" />
-      <!--Favicon link ends-->
-
-      <title>Rhythm Republic</title>
-   </head>
-   <body>
-      <header>
-         <div class="first-header">
-            <div class="container">
-               <div class="row">
-                  <div class="col">
-                     <a href="index.html">Main Page</a>
-                  </div>
-
-                  <div class="col">
-                     <a href="partials/shipping-delivery.php">Shipping and Delivery</a>
-                  </div>
-
-                  <div class="col">
-                     <a href="partials/privacy-security.php">Privacy and Security</a>
-                  </div>
-
-                  <div class="col">
-                     <a href="partials/order-conditions.php">Order Conditions</a>
-                  </div>
-
-                  <div class="col">
-                     <a href="partials/communication.php">Communication</a>
-                  </div>
-               </div>
-            </div>
-         </div>
-
-         <div class="second-header">
-            <div class="second-header-navbar">
-               <div class="second-header-nav">
-                  <nav>
-                     <div class="nav-logo">
-                        <a href="index.html">Rhythm<span>Republic</span></a>
-                     </div>
-
-                     <div class="nav-list">
-                        <a class="nav-item nav-item-active" href="#"
-                           >Main Page</a
-                        >
-                        <a class="nav-item" href="#">Music</a>
-                        <a class="nav-item" href="#">Poster</a>
-                        <a class="nav-item" href="#">Magazine/Book</a>
-                     </div>
-                  </nav>
-               </div>
-
-               <div class="second-header-icons">
-                  <a id="search-icon" class="fas fa-search searh-icon"></a>
-                  <a href="#" class="fas fa-user"></a>
-                  <a href="#" class="fas fa-shopping-cart"></a>
-               </div>
-            </div>
-            <div id="search-input" class="search-bar hidden">
-                <input
-                   type="text"
-                   name="search-bar-input"
-                   class="search-bar-input"
-                   placeholder="salam"
-                />
-                <button type="submit" class="search-submit">
-                   <a class="fas fa-search"></a>
-                </button>
-             </div>
-         </div>
-         
-      </header>
-
-      <main></main>
-
-      <footer class="text-center text-lg-start bg-body-tertiary text-muted">
+<footer class="text-center text-lg-start bg-body-tertiary text-muted">
          <section
             class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom"
          >
@@ -205,7 +95,7 @@
                   >
                      <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
                      <p>
-                        <i class="fas fa-home me-3"></i> San Francisco 3825 Boring Lane US
+                        <i class="fas fa-home me-3"></i> New York, NY 10012, US
                      </p>
                      <p>
                         <i class="fas fa-envelope me-3"></i
