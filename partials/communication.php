@@ -1,3 +1,16 @@
+<?php
+    session_start();
+    if ( isset($_POST['captcha']) && ($_POST['captcha']!= '' )) {
+        // Validation: Checking entered captcha code with the generated captcha code
+        // Note: the captcha code is compared case insensitively.
+        if ( strcasecmp($_SESSION['captcha'], $_POST['captcha']) != 0 ) {
+            echo '<script>alert("Your captcha code isn\'t matching")</script>'; 
+        } else {
+            echo '<script>alert("Your captcha code is matching")</script>';	
+        }
+    }
+?>
+
 <?php include_once "header.php";?>
 <main>
     <div>
@@ -50,11 +63,16 @@
 
     <div>
         <h4><strong>Enter Captcha Text:</strong></h4>
-        <img src="" alt="">
-        <form action="">
-            <input type="text">
+        <img src="../captcha/captcha.php?rand = <?php echo rand(); ?>" alt="captcha_image" id="captcha_image">
+        <p>Can't read image?<a href="javascript: refreshCaptcha()"> Click Here</a></p>
+        
+        <form mame="form" method="post">
+            <input type="text" name="captcha">
+            <input type="submit" name="submit" value="Submit">
         </form>
     </div>
 
 </main>
+<script src="../script/captcha.js"></script>
+
 <?php include_once "footer.php"?>
