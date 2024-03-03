@@ -1,71 +1,228 @@
 * {
-    @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+   @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 }
 
-html, body  {
-    margin: 0;
-    padding: 0;
+html,
+body {
+   margin: 0;
+   padding: 0;
 }
 
 /*first header part starts*/
 .first-header {
-    padding: 9px;
-    background-color: #c5c5c5;
+   padding: 9px;
+   background-color: #c5c5c5;
 }
 
 a {
-    text-decoration: none;
-    color: #1b1b1b;
+   text-decoration: none;
+   color: #1b1b1b;
 }
 
 a:hover {
-    color: #000;
-    text-decoration: underline;
+   color: #000;
+   text-decoration: underline;
 }
 /*first header part ends*/
 
+main {
+   margin: 200px;
+}
+
 /*second header starts*/
 .second-header {
-    display: flex;
-    padding-top: 12px;    
+   display: flex;
+   flex-direction: column;
+   width: 100%;
+   justify-content: space-between;
+   align-items: center;
+   /* margin: 20px auto; */
+   background-color: rgba(251, 250, 250, 0.7);
+   position: fixed;
+}
+.second-header-navbar {
+   display: flex;
+   width: 100%;
+   justify-content: space-between;
+   align-items: center;
+}
+.second-header-nav {
+   display: flex;
+   width: 90%;
 }
 
-nav {
-    font-size: 22px;
-    margin-left: 15px;
+.second-header-nav nav {
+   display: flex;
+   width: 100%;
+   justify-content: space-between;
 }
 
-nav a {
-    margin-right: 5px;
+.second-header-nav nav .nav-logo {
+   display: flex;
+   width: 20%;
+   justify-content: center;
+   text-align: center;
+   align-items: center;
 }
 
+.second-header-nav nav .nav-logo a {
+   font-size: 30px;
+   font-weight: 900;
+   text-decoration: none;
+   -webkit-text-stroke: #27ae60 1px;
+   color: #fff;
+}
+.second-header-nav nav .nav-logo a span {
+   font-size: 30px;
+   font-weight: 700;
+   text-decoration: none;
+
+   color: #27ae60;
+}
+
+.second-header-nav nav .nav-list {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   width: 70%;
+   margin: 20px auto 10px auto;
+}
+
+.second-header-nav nav .nav-list .nav-item {
+   width: 25%;
+   text-align: center;
+}
+
+.second-header-nav nav .nav-list .nav-item {
+   text-decoration: none;
+   color: #1b1b1b;
+   font-size: 18px;
+   font-weight: 700;
+   border-radius: 2px;
+   padding: 15px 10px;
+   transition: all 0.6s;
+}
+
+.second-header-nav nav .nav-list .nav-item:hover {
+   background-color: #27ae60;
+   color: #fff;
+}
+
+.nav-item-active {
+   background-color: #27ae60;
+   color: #fff !important;
+}
+
+.second-header-icons {
+   display: flex;
+   width: 10%;
+   justify-content: space-around;
+   text-decoration: none;
+}
+.second-header-icons a {
+   text-decoration: none;
+   width: 33%;
+   text-align: center;
+   padding: 8px;
+   transition: all 0.7s;
+   cursor: pointer;
+}
+.second-header-icons a:hover {
+   background-color: #27ae60;
+}
+.search-icon {
+   display: flex;
+}
+.active-icon {
+   background-color: #27ae60;
+}
+
+.hidden {
+   display: hidden !important;
+}
+
+/* Search Bar start */
+
+.search-bar {
+   display: flex;
+   width: 100%;
+   justify-content: center;
+}
+
+.search-bar-input {
+   width: 800px;
+   height: 35px;
+   padding-left: 10px;
+}
+
+.search-submit {
+   background-color: #fff;
+   border: none;
+   text-align: center;
+}
+.hidden {
+   animation-name: fadeInOut;
+   animation-duration: 0.3s;
+   animation-fill-mode: forwards;
+}
+.fadeInDown {
+   animation-name: fadeInDown;
+   animation-duration: 1s;
+   animation-fill-mode: forwards;
+}
+
+@keyframes fadeInDown {
+   from {
+      opacity: 0.5;
+      transform: translateY(-50%);
+   }
+   to {
+      opacity: 1;
+      transform: translateY(0);
+   }
+}
+
+@keyframes fadeInOut {
+   from {
+      opacity: 1;
+      transform: translateY(0);
+   }
+   to {
+      opacity: 0;
+      display: none;
+   }
+}
+
+/* Search Bar end */
 
 /*second header ends*/
 
+/* =================== */
+
 /*footer part starts*/
 .icons a {
-    text-decoration: none;
+   text-decoration: none;
 }
 
 footer i:hover {
-    transition: all 0.3s;
-    color: #1b1b1b;
+   transition: all 0.3s;
+   color: #1b1b1b;
 }
 
 footer a:hover i:hover {
-    font-size: 18px;
+   font-size: 18px;
 }
 
 .products p a:hover {
-    font-size: 18px;
+   font-size: 18px;
 }
 
 .links p a:hover {
-    font-size: 18px;
+   font-size: 18px;
 }
 
 .contact p:hover {
-    font-size: 18px;
+   font-size: 18px;
 }
 
 /*footer part ends*/
