@@ -71,7 +71,7 @@
                <div class="second-header-nav">
                   <nav>
                      <div class="nav-logo">
-                        <a href="index.html">Rhythm<span>Republic</span></a>
+                        <a href="../index.html">Rhythm<span>Republic</span></a>
                      </div>
 
                      <div class="nav-list">
