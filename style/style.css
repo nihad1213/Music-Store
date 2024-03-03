@@ -24,6 +24,24 @@ a:hover {
 }
 /*first header part ends*/
 
+/*second header starts*/
+.second-header {
+    display: flex;
+    padding-top: 12px;    
+}
+
+nav {
+    font-size: 22px;
+    margin-left: 15px;
+}
+
+nav a {
+    margin-right: 5px;
+}
+
+
+/*second header ends*/
+
 /*footer part starts*/
 .icons a {
     text-decoration: none;
