@@ -7,3 +7,4 @@ searchIcon.addEventListener("click", ()=>{
    // searchInput.classList.toggle("fadeInOut")
    searchIcon.classList.toggle("active-icon");
 })
+

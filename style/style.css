@@ -200,6 +200,19 @@ main {
 
 /* =================== */
 
+/*Main part starts*/
+.main-new-products-text, .main-best-seller-text, .main-discounted-items-text {
+   background-color: #27ae60;
+   color: #fff;
+}
+
+.main-new-products-div, .main-best-seller-div, .main-discounted-items {
+   margin-bottom: 24px;
+   background-color: #c5c5c5;
+}
+
+/*Main part ends*/
+
 /*footer part starts*/
 .icons a {
    text-decoration: none;
