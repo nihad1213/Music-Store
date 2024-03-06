@@ -209,7 +209,10 @@ main {
 .main-new-products-div, .main-best-seller-div, .main-discounted-items {
    margin-bottom: 24px;
    background-color: #c5c5c5;
+   margin-top: 20px;
+   padding-bottom: 20px;
 }
+
 
 /*Main part ends*/
 
