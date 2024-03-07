@@ -79,10 +79,10 @@
                      </div>
 
                      <div class="nav-list">
-                        <a class="nav-item nav-item-active" href="../index.html">
+                        <a class="nav-item" href="../index.html">
                            Main Page
                         </a>
-                        <a class="nav-item" href="music.php">Music</a>
+                        <a class="nav-item nav-item-active" href="music.php">Music</a>
                         <a class="nav-item" href="poster.php">Poster</a>
                         <a class="nav-item" href="book.php">Magazine/Book</a>
                      </div>

@@ -201,13 +201,15 @@ main {
 /* =================== */
 
 /*Main part starts*/
-.main-new-products-text, .main-best-seller-text, .main-discounted-items-text {
+.main-new-products-text, .main-best-seller-text, .main-discounted-items-text, 
+.main-poster-text, .main-music-text, .main-book-text {
    background-color: #27ae60;
    color: #fff;
    padding-left: 15px;
 }
 
-.main-new-products-div, .main-best-seller-div, .main-discounted-items {
+.main-new-products-div, .main-best-seller-div, .main-discounted-items, 
+.main-poster-div, .main-music-div, .main-book-div {
    margin-bottom: 24px;
    background-color: #c5c5c5;
    margin-top: 20px;
