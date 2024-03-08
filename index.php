@@ -47,7 +47,7 @@
             <div class="container">
                <div class="row">
                   <div class="col">
-                     <a href="index.html">Main Page</a>
+                     <a href="index.php">Main Page</a>
                   </div>
 
                   <div class="col">
@@ -74,11 +74,11 @@
                <div class="second-header-nav">
                   <nav>
                      <div class="nav-logo">
-                        <a href="index.html">Rhythm<span>Republic</span></a>
+                        <a href="index.php">Rhythm<span>Republic</span></a>
                      </div>
 
                      <div class="nav-list">
-                        <a class="nav-item nav-item-active" href="#"
+                        <a class="nav-item nav-item-active" href="index.php"
                            >Main Page</a
                         >
                         <a class="nav-item" href="partials/music.php">Music</a>
@@ -89,9 +89,9 @@
                </div>
 
                <div class="second-header-icons">
-                  <a id="search-icon" class="fas fa-search searh-icon"></a>
-                  <a href="#" class="fas fa-user"></a>
-                  <a href="#" class="fas fa-shopping-cart"></a>
+                  <a id="search-icon" class="fas fa-search searh-icon" href="partials/search.php"></a>
+                  <a href="partials/login.php" class="fas fa-user"></a>
+                  <a href="partials/cart.php.php" class="fas fa-shopping-cart"></a>
                </div>
             </div>
             <div id="search-input" class="search-bar hidden">
@@ -102,7 +102,7 @@
                    placeholder="Search..."
                    id="submitInput"
                 />
-                <form action="index.html">
+                <form action="index.php">
                   <button type="submit" class="search-submit" id="submitButton" value="Submit">
                      <i class="fas fa-search"></i>
                   </button>
@@ -325,7 +325,7 @@
 
          <div class="main-discounted-items">
             <div class="main-discounted-items-div">
-               <h2 class="main-discounted-items-text"><strong>Discounted Images</strong></h2>
+               <h2 class="main-discounted-items-text"><strong>Discounted Albums</strong></h2>
             </div>
 
             <div class="card-slider-part">

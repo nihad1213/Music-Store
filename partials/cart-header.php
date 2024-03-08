@@ -83,7 +83,7 @@
                            Main Page
                         </a>
                         <a class="nav-item" href="music.php">Music</a>
-                        <a class="nav-item nav-item-active" href="poster.php">Poster</a>
+                        <a class="nav-item" href="poster.php">Poster</a>
                         <a class="nav-item" href="book.php">Magazine/Book</a>
                      </div>
                   </nav>
@@ -92,7 +92,7 @@
                <div class="second-header-icons">
                   <a id="search-icon" class="fas fa-search searh-icon"></a>
                   <a href="login.php" class="fas fa-user"></a>
-                  <a href="cart.php" class="fas fa-shopping-cart"></a>
+                  <a href="cart.php" class="fas fa-shopping-cart nav-item-active"></a>
                </div>
             </div>
             <div id="search-input" class="search-bar hidden">

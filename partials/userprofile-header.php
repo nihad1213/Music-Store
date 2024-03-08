@@ -29,7 +29,8 @@
       <!--Font Awesome link ends-->
 
       <!--CSS link starts-->
-      <link rel="stylesheet" href="../style/style.css" />
+      <link rel="stylesheet" href="../style/login-register.css" type="text/css">
+      <link rel="stylesheet" href="../style/style.css" type="text/css">
       <!--CSS link ends-->
 
       <!--Favicon link starts-->
@@ -83,7 +84,7 @@
                            Main Page
                         </a>
                         <a class="nav-item" href="music.php">Music</a>
-                        <a class="nav-item nav-item-active" href="poster.php">Poster</a>
+                        <a class="nav-item" href="poster.php">Poster</a>
                         <a class="nav-item" href="book.php">Magazine/Book</a>
                      </div>
                   </nav>
@@ -91,7 +92,7 @@
 
                <div class="second-header-icons">
                   <a id="search-icon" class="fas fa-search searh-icon"></a>
-                  <a href="login.php" class="fas fa-user"></a>
+                  <a href="login.php" class="fas fa-user nav-item-active"></a>
                   <a href="cart.php" class="fas fa-shopping-cart"></a>
                </div>
             </div>

@@ -83,14 +83,14 @@
                            Main Page
                         </a>
                         <a class="nav-item" href="music.php">Music</a>
-                        <a class="nav-item nav-item-active" href="poster.php">Poster</a>
+                        <a class="nav-item" href="poster.php">Poster</a>
                         <a class="nav-item" href="book.php">Magazine/Book</a>
                      </div>
                   </nav>
                </div>
 
                <div class="second-header-icons">
-                  <a id="search-icon" class="fas fa-search searh-icon"></a>
+                  <a id="search-icon" class="fas fa-search searh-icon nav-item-active"></a>
                   <a href="login.php" class="fas fa-user"></a>
                   <a href="cart.php" class="fas fa-shopping-cart"></a>
                </div>
