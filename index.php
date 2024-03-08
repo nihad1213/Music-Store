@@ -102,7 +102,7 @@
                    placeholder="Search..."
                    id="submitInput"
                 />
-                <form action="index.php">
+                <form action="search.php">
                   <button type="submit" class="search-submit" id="submitButton" value="Submit">
                      <i class="fas fa-search"></i>
                   </button>
