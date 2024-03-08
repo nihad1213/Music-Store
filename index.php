@@ -89,7 +89,7 @@
                </div>
 
                <div class="second-header-icons">
-                  <a id="search-icon" class="fas fa-search searh-icon" href="partials/search.php"></a>
+                  <a id="search-icon" class="fas fa-search searh-icon"></a>
                   <a href="partials/login.php" class="fas fa-user"></a>
                   <a href="partials/cart.php.php" class="fas fa-shopping-cart"></a>
                </div>
@@ -102,7 +102,7 @@
                    placeholder="Search..."
                    id="submitInput"
                 />
-                <form action="search.php">
+                <form action="partials/search.php">
                   <button type="submit" class="search-submit" id="submitButton" value="Submit">
                      <i class="fas fa-search"></i>
                   </button>
@@ -552,7 +552,7 @@
             class="text-center p-4"
             style="background-color: rgba(0, 0, 0, 0.05)"
          >
-            © 2024 Copyright:
+            © <?php echo date("Y"); ?> Copyright:
             <a class="text-reset fw-bold" href="index.html">Rhythm Republic</a>
          </div>
       </footer>
