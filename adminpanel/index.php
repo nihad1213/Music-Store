@@ -32,7 +32,7 @@
 </head>
  
 <body>
-    <form action="validate.php" method="post">
+    <form action="adminpanel.php" method="post">
         <div class="login-box">
             <h1><strong>Admin Login</strong></h1>
  
