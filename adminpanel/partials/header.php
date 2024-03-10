@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--CSS link starts-->
-    <link rel="stylesheet" href="style/adminpanel.css">
+    <link rel="stylesheet" href="./style/adminpanel.css" type="text/css">
     <!--CSS link ends-->
 
     <!--Favicon link starts-->
@@ -16,7 +16,7 @@
     <header>
         <nav>
             <a href="./adminpanel.php">Home</a>
-            <a href="">Admin Manager</a>
+            <a href="admin.php">Admin Manager</a>
             <a href="">New Products</a>
             <a href="">Best Seller</a>
             <a href="">Discounted Albums</a>
