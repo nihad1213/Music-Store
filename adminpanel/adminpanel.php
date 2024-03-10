@@ -1,3 +1,4 @@
+<?php include_once "partials/header.php"; ?>
 <main>
     <div>
         <h1>Dashboard</h1>
@@ -40,3 +41,4 @@
         </div>
     </div>
 </main>
+<?php include_once "partials/footer.php"; ?>

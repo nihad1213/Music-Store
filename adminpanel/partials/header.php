@@ -15,7 +15,7 @@
 <body>
     <header>
         <nav>
-            <a href="">Home</a>
+            <a href="./adminpanel.php">Home</a>
             <a href="">Admin Manager</a>
             <a href="">New Products</a>
             <a href="">Best Seller</a>
