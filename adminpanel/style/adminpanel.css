@@ -77,3 +77,18 @@ footer {
     padding: 13px;
 }
 
+/*admin panel stars*/
+.add-admin-form {
+    margin-left: 15px;
+    margin-bottom: 12px;
+}
+
+.add-admin-form input {
+    margin-bottom: 5px;
+    display: block;
+}
+
+.add-admin {
+    margin-bottom: 5px;
+}
+

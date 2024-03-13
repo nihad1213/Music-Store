@@ -5,10 +5,17 @@
             <h2><strong>Admin Manager</strong></h2>
         </div>
 
+        <?php
+            if(isset($_SESSION['add'])) {
+                echo $_SESSION['add'];
+                unset($_SESSION['add']);
+            } 
+        ?>
+        
         <div>
             <div class="add-admin">
                 <a href="add-admin.php">
-                    <button type="button" class="btn btn-success" onclick="add-admin.php">Add Admin</button>
+                    <button type="button" class="btn btn-success">Add Admin</button>
                 </a>
             </div>
         </div>
