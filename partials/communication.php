@@ -4,9 +4,9 @@
         // Validation: Checking entered captcha code with the generated captcha code
         // Note: the captcha code is compared case insensitively.
         if ( strcasecmp($_SESSION['captcha'], $_POST['captcha']) != 0 ) {
-            echo '<script>alert("Your captcha code isn\'t matching")</script>'; 
+            echo '<script>alert("Message send successfully")</script>'; 
         } else {
-            echo '<script>alert("Your captcha code is matching")</script>';	
+            echo '<script>alert("Messaage didn\'t send ")</script>';	
         }
     }
 ?>

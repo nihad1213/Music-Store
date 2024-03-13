@@ -1,7 +1,7 @@
-<?php include_once "partials/header.php"; ?>
+<?php include_once "header.php"; ?>
 <main>
-    <div>
-        <h1>Dashboard</h1>
+    <div class="dash">
+        <h2><strong>Dashboard</strong></h2>
     </div>
 
     <div class="indicators">
@@ -41,4 +41,4 @@
         </div>
     </div>
 </main>
-<?php include_once "partials/footer.php"; ?>
+<?php include_once "footer.php"; ?>
