@@ -10,13 +10,6 @@ include "../../data/connection.php";
             <h2><strong>Add Admin</strong></h2>
         </div>
 
-        <?php 
-            if (isset($_SESSION['add'])) {
-                echo $_SESSION['add'];
-                unset($_SESSION['add']);
-            }
-        ?>
-
         <div class="add-admin-form">
             <form action="" method="POST">
                 Username: <input type="text" name="adminName" placeholder="Enter Admin Username..." required>
@@ -33,33 +26,3 @@ include "../../data/connection.php";
     </div>
 </main>
 <?php include_once "footer.php"; ?>
-
-
-<?php
-//Add admin name and password to table
-
-//check if submit button clicked or not
-
-if (isset($_POST['submit'])) {
-
-    $adminName = $_POST['adminName'];
-    $adminPassword  = md5($_POST['adminPassword']);
-    
-    //adding sql table
-    $sql = "INSERT INTO admins SET
-        adminName = '$adminName',
-        adminPassword = '$adminPassword'
-    ";
-
-    //Execute Query
-    $result = mysqli_query($connection, $sql) or die(mysqli_error($connection));
-
-    if ($result == TRUE) {
-        $_SESSION['add'] = "Admin added Succesfully";
-        header("location: http://localhost/Music%20Store/adminpanel/partials/adminpage.php");
-    } else {
-        $_SESSION['add'] = "Failed to add Admin";
-        header("location: http://localhost/Music%20Store/adminpanel/partials/adminpage.php");
-    }
-}
-?>
