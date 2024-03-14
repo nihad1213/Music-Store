@@ -79,7 +79,7 @@ footer {
 
 /*admin panel stars*/
 .add-admin-form {
-    margin-left: 15px;
+    margin-left: 16px;
     margin-bottom: 12px;
 }
 
@@ -87,8 +87,3 @@ footer {
     margin-bottom: 5px;
     display: block;
 }
-
-.add-admin {
-    margin-bottom: 5px;
-}
-

@@ -1,3 +1,8 @@
+<?php  
+//adding connection file
+include_once "../data/connection.php";
+?>
+
 <!DOCTYPE html>
 <html lang="en">
  
@@ -27,28 +32,51 @@
 
     <!--CSS link starts-->
     <link rel="stylesheet" href="style/style.css">
-    <!--CSS link ends-->
+    <!--CSS link ends partials/adminpanel.php-->
     <title>Admin Login</title>
 </head>
  
 <body>
-    <form action="partials/adminpanel.php" method="post">
+    <form action="" method="post">
         <div class="login-box">
             <h1><strong>Admin Login</strong></h1>
  
             <div class="textbox">
                 <i class="fa fa-user" aria-hidden="true"></i>
-                <input type="text" name="username" placeholder="Enter the admin username">
+                <input type="text" name="adminName" placeholder="Enter the admin username">
             </div>
  
             <div class="textbox">
                 <i class="fa fa-lock" aria-hidden="true"></i>
-                <input type="password" name="password" placeholder="Enter the admin password">
+                <input type="password" name="adminPassword" placeholder="Enter the admin password">
             </div>
  
-            <input class="button" type="submit" name="login" value="Log in">
+            <input class="button" type="submit" name="submit" value="Log in">
         </div>
     </form>
 </body>
- 
 </html>
+
+<?php 
+//Check admin is exist or not
+if (isset($_POST['submit']) || isset($adminName) || isset($adminPassword)) {
+    $adminName = $_POST['adminName'];
+    $adminPassword = $_POST['adminPassword'];
+    //Query
+    $sql = "SELECT * FROM admins WHERE adminName = '$adminName' 
+            AND adminPassword = '$adminPassword'";
+    //Execute Query
+    $result = mysqli_query($connection, $sql);
+    $row = mysqli_fetch_assoc($result);
+    
+    if ($row == TRUE) {
+        header("location: http://localhost/Music%20Store/adminpanel/partials/adminpanel.php");
+    } else {
+        echo '<script language="javascript">';
+        echo 'alert("Admin Doesn\'t Exists!")';
+        echo '</script>';
+    }
+
+}
+//Check ubmt button clicked or not
+?>

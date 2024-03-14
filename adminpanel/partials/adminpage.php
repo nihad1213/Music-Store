@@ -4,13 +4,6 @@
         <div>
             <h2><strong>Admin Manager</strong></h2>
         </div>
-
-        <?php
-            if(isset($_SESSION['add'])) {
-                echo $_SESSION['add'];
-                unset($_SESSION['add']);
-            } 
-        ?>
         
         <div>
             <div class="add-admin">
