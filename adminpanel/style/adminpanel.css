@@ -60,13 +60,20 @@ table tr td {
 /*partial-action and items part ends*/
 
 .indicators {
-    display: flex;
     text-align: center;
-    justify-content: center;
+    position: relative;
 }
 
 .indicator-items {
     padding: 15px;
+    background-color: #c5c5c5;
+    margin: 12px;
+    margin-left: 52px;
+    margin-right: 52px;
+}
+
+.indicator-items p {
+    text-align: center;
 }
 
 /*Footer part*/
@@ -78,12 +85,16 @@ footer {
 }
 
 /*admin panel stars*/
-.add-admin-form {
+.add-admin-form, .edit-admin-form {
     margin-left: 16px;
     margin-bottom: 12px;
 }
 
-.add-admin-form input {
+.add-admin-form input, .edit-admin-form input{
     margin-bottom: 5px;
     display: block;
+}
+
+.edit-admin-form input{
+    width: 20%;
 }

@@ -64,7 +64,8 @@ if (isset($_POST['submit']) || isset($adminName) || isset($adminPassword)) {
     $adminPassword = $_POST['adminPassword'];
     //Query
     $sql = "SELECT * FROM admins WHERE adminName = '$adminName' 
-            AND adminPassword = '$adminPassword'";
+            AND adminPassword = md5('$adminPassword')";
+    
     //Execute Query
     $result = mysqli_query($connection, $sql);
     $row = mysqli_fetch_assoc($result);
