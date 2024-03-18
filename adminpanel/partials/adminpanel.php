@@ -1,3 +1,8 @@
+<?php 
+//Path for connection.php file
+include_once "../../data/connection.php";
+?>
+
 <?php include_once "header.php"; ?>
 <main>
     <div class="dash">
@@ -5,13 +10,30 @@
     </div>
 
     <div class="indicators">
+        <?php
+        //Query for admins table 
+        $sql = "SELECT * FROM admins";
+        //Result
+        $result = mysqli_query($connection, $sql);
+
+        //Get number of rows from table
+        $numberofAdmins = mysqli_num_rows($result);
+        ?>
         <div class="indicator-items">
-            <h2>0</h2>
+            <h2><?php echo "$numberofAdmins"; ?></h2>
             <p>Admins</p>
         </div>
 
         <div class="indicator-items">
-            <h2>0</h2>
+        <?php 
+        //Query For New Products
+        $sql2 = "SELECT * FROM newproducts";
+        //Result
+        $result2 = mysqli_query($connection, $sql2);
+
+        $numberofNewProducts = mysqli_num_rows($result2);
+        ?>
+            <h2><?php echo $numberofNewProducts; ?></h2>
             <p>New Products</p>
         </div>
 

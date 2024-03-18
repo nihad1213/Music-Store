@@ -58,7 +58,7 @@ $result = mysqli_query($connection, $sql);
                     //start loop here
                     while($row = mysqli_fetch_assoc($result)) {
                 ?>
-                <td><?php echo $row['adminID'];?></td>
+                <td><strong><?php echo $row['adminID'];?></strong></td>
                 <td><?php echo $row['adminName'];?></td>
                 <td>
                     <a href="delete-admin.php?adminID=<?php echo $row['adminID'];?>">
@@ -73,7 +73,7 @@ $result = mysqli_query($connection, $sql);
                 </tr>
                 <?php
                     //end loop here
-                    }
+                }
                 ?>        
         </table>
     </div>

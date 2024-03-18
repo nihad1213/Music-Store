@@ -1,3 +1,7 @@
+<?php 
+//Path for connection.php file
+include_once "data/connection.php";
+?>
 <!DOCTYPE html>
 <html lang="en">
    <head>
@@ -118,101 +122,43 @@
             <div class="main-new-products">
                <h2 class="main-new-products-text"><strong>New Products</strong></h2>
             </div>
-
+           
             <div class="card-slider-part">
                <div class="swiper mySwiper">
                   <div class="swiper-wrapper">
-                    
+                  <?php 
+                     //QUERY for newproducts
+                     $sql = "SELECT * FROM newproducts";
+                     //Result
+                     $result = mysqli_query($connection, $sql);
+
+                     $count = mysqli_num_rows($result);
+
+                     if ($count > 0) {
+                        while ($row = mysqli_fetch_assoc($result)) {
+                           $productID = $row['productID'];
+                           $productTitle = $row['productTitle'];
+                           $productPrice = $row['productPrice'];
+                           $productLabel = $row['productLabel'];
+                           $imageName = $row['productImage'];
+               
+                  ?>
                      <div class="swiper-slide">
                      <div class="elements-card-slider" style="text-align: center;">
-                        <img src="assets/test images/test.jpg" style="width: 50%;" alt="cover">
-                        <p>Sagopa Kajmer - BPG</p>
-                        <p>$ 12</p>
-                        <p style="color: rgb(38, 38, 119);">Hammer Muzik</p>
+                        <img src="<?php echo "http://localhost/Music%20Store/";?>assets/newproducts/<?php echo $row['productImage'];?>" style="width: 50%;" alt="cover">
+                        <p><?php echo $productTitle; ?></p>
+                        <p><?php echo $productPrice; ?>$</p>
+                        <p style="color: rgb(38, 38, 119);"><?php echo $productLabel; ?></p>
                         <button type="button" class="btn btn-success">Add to Cart</button>
                      </div>
                     </div>
-                    
-                    <div class="swiper-slide">
-                     <div class="elements-card-slider" style="text-align: center;">
-                        <img src="assets/test images/test1.jpg" style="width: 50%;" alt="cover">
-                        <p>Sagopa Kajmer - BPG</p>
-                        <p>$ 12</p>
-                        <p style="color: rgb(38, 38, 119);">Hammer Muzik</p>
-                        <button type="button" class="btn btn-success">Add to Cart</button>
-                     </div>
-                    </div>
-                    
-                    <div class="swiper-slide">
-                     <div class="elements-card-slider" style="text-align: center;">
-                        <img src="assets/test images/test2.jpg" style="width: 50%;" alt="cover">
-                        <p>Sagopa Kajmer - BPG</p>
-                        <p>$ 12</p>
-                        <p style="color: rgb(38, 38, 119);">Hammer Muzik</p>
-                        <button type="button" class="btn btn-success">Add to Cart</button>
-                     </div>
-                    </div>
-                    
-                    <div class="swiper-slide">
-                     <div class="elements-card-slider" style="text-align: center;">
-                        <img src="assets/test images/test3.jpg" style="width: 50%;" alt="cover">
-                        <p>Sagopa Kajmer - BPG</p>
-                        <p>$ 12</p>
-                        <p style="color: rgb(38, 38, 119);">Hammer Muzik</p>
-                        <button type="button" class="btn btn-success">Add to Cart</button>
-                     </div>
-                    </div>
-                    
-                    <div class="swiper-slide">
-                     <div class="elements-card-slider" style="text-align: center;">
-                        <img src="assets/test images/test4.jpg" style="width: 50%;" alt="cover">
-                        <p>Sagopa Kajmer - BPG</p>
-                        <p>$ 12</p>
-                        <p style="color: rgb(38, 38, 119);">Hammer Muzik</p>
-                        <button type="button" class="btn btn-success">Add to Cart</button>
-                     </div>
-                    </div>
-                    
-                    <div class="swiper-slide">
-                     <div class="elements-card-slider" style="text-align: center;">
-                        <img src="assets/test images/test5.jpg" style="width: 50%;" alt="cover">
-                        <p>Sagopa Kajmer - BPG</p>
-                        <p>$ 12</p>
-                        <p style="color: rgb(38, 38, 119);">Hammer Muzik</p>
-                        <button type="button" class="btn btn-success">Add to Cart</button>
-                     </div>
-                    </div>
-                    
-                    <div class="swiper-slide">
-                     <div class="elements-card-slider" style="text-align: center;">
-                        <img src="assets/test images/test6.jpg" style="width: 50%;" alt="cover">
-                        <p>Sagopa Kajmer - BPG</p>
-                        <p>$ 12</p>
-                        <p style="color: rgb(38, 38, 119);">Hammer Muzik</p>
-                        <button type="button" class="btn btn-success">Add to Cart</button>
-                     </div>
-                    </div>
-                    
-                    <div class="swiper-slide">
-                     <div class="elements-card-slider" style="text-align: center;">
-                        <img src="assets/test images/test7.jpg" style="width: 50%;" alt="cover">
-                        <p>Sagopa Kajmer - BPG</p>
-                        <p>$ 12</p>
-                        <p style="color: rgb(38, 38, 119);">Hammer Muzik</p>
-                        <button type="button" class="btn btn-success">Add to Cart</button>
-                     </div>
-                    </div>
-                    
-                    <div class="swiper-slide">
-                     <div class="elements-card-slider" style="text-align: center;">
-                        <img src="assets/test images/test8.jpg" style="width: 50%;" alt="cover">
-                        <p>Sagopa Kajmer - BPG</p>
-                        <p>$ 12</p>
-                        <p style="color: rgb(38, 38, 119);">Hammer Muzik</p>
-                        <button type="button" class="btn btn-success">Add to Cart</button>
-                     </div>
-                    </div>
+               <?php 
+                  }
 
+                  } else {
+                     echo "New Product Not Added";
+                  }
+               ?>
                   </div>
                 </div>
             </div>

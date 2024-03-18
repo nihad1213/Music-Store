@@ -33,7 +33,7 @@
         <nav>
             <a href="./adminpanel.php">Home</a>
             <a href="adminpage.php">Admin Manager</a>
-            <a href="">New Products</a>
+            <a href="new-products-page.php">New Products</a>
             <a href="">Best Seller</a>
             <a href="">Discounted Albums</a>
             <a href="">Music Manager</a>

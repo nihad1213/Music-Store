@@ -42,7 +42,7 @@ h2 {
 }
 
 .tbl-full {
-    width: 60%;
+    width: 97%;
     margin-left: 30px;
 }
 
@@ -53,7 +53,7 @@ table tr th {
 }
 
 table tr td {
-    padding: 1%;
+    padding: 0.5%;
 }
 
 
@@ -68,8 +68,16 @@ table tr td {
     padding: 15px;
     background-color: #c5c5c5;
     margin: 12px;
-    margin-left: 52px;
-    margin-right: 52px;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+.indicator-items h2, p {
+    text-align: center;
+}
+
+.indicator-items p {
+    font-size: 23px;
 }
 
 .indicator-items p {
