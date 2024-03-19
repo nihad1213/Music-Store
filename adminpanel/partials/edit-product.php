@@ -54,7 +54,7 @@
         </div>
     </div>
 </main>
-<?php include_once "footer.php"; ?>\
+<?php include_once "footer.php"; ?>
 
 <?php 
     //Check button is clicked

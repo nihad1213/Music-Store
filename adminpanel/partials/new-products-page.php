@@ -81,7 +81,7 @@
                 </td>
                 <td>
                     <a href="edit-product.php?productID=<?php echo $row['productID'];?>">
-                        <button type="button" class="btn btn-warning">Edit Admin</button>
+                        <button type="button" class="btn btn-warning">Edit Product</button>
                     </a>
                 </td>
             </tr>
