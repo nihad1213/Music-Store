@@ -9,7 +9,7 @@
 <main>
     <div>
         <div>
-            <h2><strong>Edit Best Seller</strong></h2>
+            <h2><strong>Edit Discounted Item</strong></h2>
         </div>
         
         <?php 
@@ -21,10 +21,10 @@
         
         <?php
             //Get Product id from URL with GET method
-            $bestSellerID = $_GET['bestSellerID'];
+            $dsItemsID = $_GET['dsItemsID'];
 
             //Query for check ID
-            $sql = "SELECT * FROM bestsellers WHERE bestSellerID= '$bestSellerID'";
+            $sql = "SELECT * FROM dsitems WHERE dsItemsID= '$dsItemsID'";
             
             //Execute Query
             $result = mysqli_query($connection, $sql);
@@ -34,21 +34,21 @@
         ?>
         
         <div class="add-admin-form">
-            <form action="edit-best-seller.php" method="POST" enctype="multipart/form-data">
-                <label>New Title: </label><input type="text" name="newbestSellerTitle" placeholder="Enter Best Seller Title..."
-                value="<?php echo $row['bestSellerTitle']; ?>" required>
+            <form action="edit-ds-items.php" method="POST" enctype="multipart/form-data">
+                <label>New Title: </label><input type="text" name="newdsItemsTitle" placeholder="Enter Discounted Item Title..."
+                value="<?php echo $row['dsItemsTitle']; ?>" required>
                 <br>
-                <label>New Price: </label><input type="number" step="any" name="newbestSellerPrice" placeholder="Enter Best Seller Price..."
-                value="<?php echo $row['bestSellerPrice']; ?>" required>
+                <label>New Price: </label><input type="number" step="any" name="newdsItemsPrice" placeholder="Enter Discounted Item Price..."
+                value="<?php echo $row['dsItemsPrice']; ?>" required>
                 <br>
-                <label>New Label: </label><input type="text" name="newbestSellerLabel" placeholder="Enter Best Seller Label..." 
-                value="<?php echo $row['bestSellerLabel'] ?>" required>
+                <label>New Label: </label><input type="text" name="newdsItemsLabel" placeholder="Enter Discounted Item Label..." 
+                value="<?php echo $row['dsItemsLabel'] ?>" required>
                 <br>
-                <label>New Image: </label><input type="file" name="newbestSellerImage" 
-                value = "<?php echo $row['bestSellerImage']; ?>" required>
-                <input type="hidden" name="bestSellerID" value=<?php echo $row['bestSellerID'];?>>
+                <label>New Image: </label><input type="file" name="newdsItemsImage" 
+                value = "<?php echo $row['dsItemsImage']; ?>" required>
+                <input type="hidden" name="dsItemsID" value=<?php echo $row['dsItemsID'];?>>
                 <div class="add-button">
-                    <button type="submit" name="submit" class="btn btn-success">Edit Best Seller</button>
+                    <button type="submit" name="submit" class="btn btn-success">Edit Discounted Item</button>
                 </div>
             </form>
         </div>
@@ -58,47 +58,47 @@
 
 <?php 
     //Check button is clicked
-    if (isset($_POST['submit']) || isset($newbestSellerTitle) || isset($newbestSellerPrice) || isset($newbestSellerLabel)
-    || isset($newbestSellerImage)) {
+    if (isset($_POST['submit']) || isset($newdsItemsTitle) || isset($newdsItemsPrice) || isset($newdsItemsLabel)
+    || isset($newdsItemsImage)) {
 
-        $newbestSellerTitle = $_POST['newbestSellerTitle'];
-        $newbestSellerPrice = $_POST['newbestSellerPrice'];
-        $newbestSellerLabel = $_POST['newbestSellerLabel'];
-        $bestSellerID = $_POST['bestSellerID'];
-        $newbestSellerImage = $_FILES['newbestSellerImage']['name'];
+        $newdsItemsTitle = $_POST['newdsItemsTitle'];
+        $newdsItemsPrice = $_POST['newdsItemsPrice'];
+        $newdsItemsLabel = $_POST['newdsItemsLabel'];
+        $dsItemsID = $_POST['dsItemsID'];
+        $newdsItemsImage = $_FILES['newdsItemsImage']['name'];
 
         if (isset($newProductImage)) {
-            $newImageName = $_FILES['newbestSellerImage']['name'];
-            $sourcePath = $_FILES['newbestSellerImage']['tmp_name'];
-            $destinationPath = "../../assets/bestsellers/" . $newImageName;
+            $newImageName = $_FILES['newdsItemsImage']['name'];
+            $sourcePath = $_FILES['newdsItemsImage']['tmp_name'];
+            $destinationPath = "../../assets/dsitems/" . $newImageName;
             $upload = move_uploaded_file($sourcePath, $destinationPath);
         
             //Check Image added or not
             if ($upload == FALSE) {
                 $_SESSION['upload-image'] = "<div style='color: #FF0000; margin-left: 25px'>Failed to Upload Image</div>";
-                header("location: http://localhost/Music%20Store/adminpanel/partials/edit-best-seller.php");
+                header("location: http://localhost/Music%20Store/adminpanel/partials/edit-ds-items.php");
             }
         
         }
         
         //Query to Update values
-        $sql2 = "UPDATE bestsellers SET
-            bestSellerTitle = '$newbestSellerTitle',
-            bestSellerPrice = '$newbestSellerPrice',
-            bestSellerLabel = '$newbestSellerLabel',
-            bestSellerImage = '$newbestSellerImage'
-            WHERE bestSellerID = '$bestSellerID'
+        $sql2 = "UPDATE dsitems SET
+            dsItemsTitle = '$newdsItemsTitle',
+            dsItemsPrice = '$newdsItemsPrice',
+            dsItemsLabel = '$newdsItemsLabel',
+            dsItemsImage = '$newdsItemsImage'
+            WHERE dsItemsID = '$dsItemsID'
         ";
 
         //Execute Query
         $result2 = mysqli_query($connection, $sql2);
 
         if ($result2 == TRUE) {
-            $_SESSION['edit-best-seller'] = "<div style='color: #20914f; margin-left: 25px'>Best Seller Edited Succesfully</div>";
-            header("location: http://localhost/Music%20Store/adminpanel/partials/best-seller.php");
+            $_SESSION['edit-ds-items'] = "<div style='color: #20914f; margin-left: 25px'>Discounted Item Edited Succesfully</div>";
+            header("location: http://localhost/Music%20Store/adminpanel/partials/ds-items.php");
         } else {
-            $_SESSION['edit-best-seller'] = "<div style='color: #FF0000; margin-left: 25px'>Failed to Edit Best Seller</div>";
-            header("location: http://localhost/Music%20Store/adminpanel/partials/best-seller.php");
+            $_SESSION['edit-ds-items'] = "<div style='color: #FF0000; margin-left: 25px'>Failed to Edit Discounted Item</div>";
+            header("location: http://localhost/Music%20Store/adminpanel/partials/ds-items.php");
         }
         
     }
