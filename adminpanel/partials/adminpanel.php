@@ -37,13 +37,29 @@ include_once "../../data/connection.php";
             <p>New Products</p>
         </div>
 
+        <?php 
+        //Query for Best Sellers
+        $sql3 = "SELECT * FROM bestsellers";
+        //Result
+        $result3 = mysqli_query($connection, $sql3);
+        
+        $numberofBestSellers = mysqli_num_rows($result3);
+        ?>
         <div class="indicator-items">
-            <h2>0</h2>
+            <h2><?php echo $numberofBestSellers; ?></h2>
             <p>Best Sellers</p>
         </div>
 
+        <?php 
+        //Query for dsitems
+        $sql4 = "SELECT * FROM dsitems";
+        //Result
+        $result4 = mysqli_query($connection, $sql4);
+        
+        $numberofDsItems = mysqli_num_rows($result4);
+        ?>
         <div class="indicator-items">
-            <h2>0</h2>
+            <h2><?php echo $numberofDsItems; ?></h2>
             <p>Discounted Albums</p>
         </div>
 

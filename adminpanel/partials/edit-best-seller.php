@@ -67,7 +67,7 @@
         $bestSellerID = $_POST['bestSellerID'];
         $newbestSellerImage = $_FILES['newbestSellerImage']['name'];
 
-        if (isset($newProductImage)) {
+        if (isset($newbestSellerImage)) {
             $newImageName = $_FILES['newbestSellerImage']['name'];
             $sourcePath = $_FILES['newbestSellerImage']['tmp_name'];
             $destinationPath = "../../assets/bestsellers/" . $newImageName;

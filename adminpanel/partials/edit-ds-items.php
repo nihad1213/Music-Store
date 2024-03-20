@@ -67,7 +67,7 @@
         $dsItemsID = $_POST['dsItemsID'];
         $newdsItemsImage = $_FILES['newdsItemsImage']['name'];
 
-        if (isset($newProductImage)) {
+        if (isset($newdsItemsImage)) {
             $newImageName = $_FILES['newdsItemsImage']['name'];
             $sourcePath = $_FILES['newdsItemsImage']['tmp_name'];
             $destinationPath = "../../assets/dsitems/" . $newImageName;
