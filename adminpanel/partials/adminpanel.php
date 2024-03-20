@@ -63,18 +63,42 @@ include_once "../../data/connection.php";
             <p>Discounted Albums</p>
         </div>
 
+        <?php 
+        //Query for dsitems
+        $sql5 = "SELECT * FROM music";
+        //Result
+        $result5 = mysqli_query($connection, $sql4);
+        
+        $numberofMusic = mysqli_num_rows($result5);
+        ?>
         <div class="indicator-items">
-            <h2>0</h2>
-            <p>Music Album</p>
+            <h2><?php echo $numberofMusic; ?></h2>
+            <p>Music Albums</p>
         </div>
 
+        <?php 
+        //Query for dsitems
+        $sql6 = "SELECT * FROM poster";
+        //Result
+        $result6 = mysqli_query($connection, $sql6);
+        
+        $numberofPoster = mysqli_num_rows($result6);
+        ?>
         <div class="indicator-items">
-            <h2>0</h2>
+            <h2><?php echo $numberofPoster; ?></h2>
             <p>Poster</p>
         </div>  
 
+        <?php 
+        //Query for dsitems
+        $sql7 = "SELECT * FROM book";
+        //Result
+        $result7 = mysqli_query($connection, $sql7);
+        
+        $numberofBook = mysqli_num_rows($result7);
+        ?>
         <div class="indicator-items">
-            <h2>0</h2>
+            <h2><?php echo $numberofBook; ?></h2>
             <p>Magazine/Books</p>
         </div>
     </div>
