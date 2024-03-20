@@ -37,8 +37,8 @@
             <a href="best-seller.php">Best Seller</a>
             <a href="ds-items.php">Discounted Albums</a>
             <a href="music.php">Music Manager</a>
-            <a href="">Poster Manager</a>
-            <a href="">Magazine/Book Manager</a>
+            <a href="poster.php">Poster Manager</a>
+            <a href="book.php">Magazine/Book Manager</a>
         </nav>
     </header>
     <hr>
