@@ -36,7 +36,7 @@
             <a href="new-products-page.php">New Products</a>
             <a href="best-seller.php">Best Seller</a>
             <a href="ds-items.php">Discounted Albums</a>
-            <a href="">Music Manager</a>
+            <a href="music.php">Music Manager</a>
             <a href="">Poster Manager</a>
             <a href="">Magazine/Book Manager</a>
         </nav>
