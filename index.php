@@ -107,7 +107,7 @@ include_once "data/connection.php";
                    id="submitInput"
                 />
                 <form action="partials/search.php">
-                  <button type="submit" class="search-submit" id="submitButton" value="Submit">
+                  <button type="submit" class="search-submit" id="submitButton" value="Submit" name="search">
                      <i class="fas fa-search"></i>
                   </button>
                </form>
