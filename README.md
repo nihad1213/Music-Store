@@ -12,6 +12,5 @@ https://github.com/nihad1213/Music-Store/assets/99197650/89abeaf1-fefa-4bdb-9f4e
 
 3. Add New Best Seller, Delete New Best Seller, Edit New Best Seller Part demo
 
-
-https://github.com/nihad1213/Music-Store/assets/99197650/ec534202-2c49-4f4e-81e4-354239637311
+https://github.com/nihad1213/Music-Store/assets/99197650/b94ef698-4059-4430-943a-d80efd8eae4d
 
