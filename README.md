@@ -1,4 +1,4 @@
-#Music Store Created in PHP
+# Music Store Created in PHP
 # 1. PHP captcha image generator demo
 
 
