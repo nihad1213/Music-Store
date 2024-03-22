@@ -14,7 +14,7 @@ https://github.com/nihad1213/Music-Store/assets/99197650/89abeaf1-fefa-4bdb-9f4e
 
 https://github.com/nihad1213/Music-Store/assets/99197650/b94ef698-4059-4430-943a-d80efd8eae4d
 
-# Note: Adding New Poster, Magazine/Books, and Music works like these.
+# Note: Adding New Poster, Magazine/Books, Discounted Items and Music works like these.
 
 #Admin Dashboard
 
