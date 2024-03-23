@@ -94,7 +94,7 @@ include_once "data/connection.php";
 
                <div class="second-header-icons">
                   <a id="search-icon" class="fas fa-search searh-icon"></a>
-                  <a href="partials/login.php" class="fas fa-user"></a>
+                  <a href="#" class="fas fa-user"></a>
                   <a href="#" class="fas fa-shopping-cart"></a>
                </div>
             </div>

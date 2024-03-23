@@ -5,7 +5,7 @@ include_once "../data/connection.php";
 ob_start();
 ?>
 
-<?php include_once "userprofile-header.php"; ?>
+<?php include_once "header.php"; ?>
 <main>
     <div class="container-login">
     
