@@ -76,7 +76,7 @@
             //Check Image added or not
             if ($upload == FALSE) {
                 $_SESSION['upload-image'] = "<div style='color: #FF0000; margin-left: 25px'>Failed to Upload Image</div>";
-                header("location: http://localhost/Music%20Store/adminpanel/partials/edit-ds-items.php");
+                header("location: http://localhost/Music-Store/adminpanel/partials/edit-ds-items.php");
             }
         
         }
@@ -95,10 +95,10 @@
 
         if ($result2 == TRUE) {
             $_SESSION['edit-ds-items'] = "<div style='color: #20914f; margin-left: 25px'>Discounted Item Edited Succesfully</div>";
-            header("location: http://localhost/Music%20Store/adminpanel/partials/ds-items.php");
+            header("location: http://localhost/Music-Store/adminpanel/partials/ds-items.php");
         } else {
             $_SESSION['edit-ds-items'] = "<div style='color: #FF0000; margin-left: 25px'>Failed to Edit Discounted Item</div>";
-            header("location: http://localhost/Music%20Store/adminpanel/partials/ds-items.php");
+            header("location: http://localhost/Music-Store/adminpanel/partials/ds-items.php");
         }
         
     }
