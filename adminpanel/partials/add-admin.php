@@ -49,10 +49,10 @@ if (isset($_POST['submit']) || isset($adminName) || isset($adminPassword)) {
     //Check admin is exists or not
     if ($result == TRUE) {
         $_SESSION['add'] = "<div style='color: #20914f; margin-left: 25px'>Admin Added Succesfully</div>";
-        header("location: http://localhost/Music%20Store/adminpanel/partials/adminpage.php");
+        header("location: http://localhost/Music-Store/adminpanel/partials/adminpage.php");
     } else {
         $_SESSION['add'] = "<div style='color: #FF0000; margin-left: 25px'>Failed to Add Admin</div>";
-        header("location: http://localhost/Music%20Store/adminpanel/partials/adminpage.php");
+        header("location: http://localhost/Music-Store/adminpanel/partials/adminpage.php");
     }
 }
 ?>
