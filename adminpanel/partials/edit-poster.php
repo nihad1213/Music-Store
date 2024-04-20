@@ -76,7 +76,7 @@
             //Check Image added or not
             if ($upload == FALSE) {
                 $_SESSION['upload-image'] = "<div style='color: #FF0000; margin-left: 25px'>Failed to Upload Image</div>";
-                header("location: http://localhost/poster%20Store/adminpanel/partials/edit-poster.php");
+                header("location: http://localhost/Music-Store/adminpanel/partials/edit-poster.php");
             }
         
         }
@@ -95,10 +95,10 @@
 
         if ($result2 == TRUE) {
             $_SESSION['edit-poster'] = "<div style='color: #20914f; margin-left: 25px'>Poster Edited Succesfully</div>";
-            header("location: http://localhost/Music%20Store/adminpanel/partials/poster.php");
+            header("location: http://localhost/Music-Store/adminpanel/partials/poster.php");
         } else {
             $_SESSION['edit-poster'] = "<div style='color: #FF0000; margin-left: 25px'>Failed to Edit Poster</div>";
-            header("location: http://localhost/Music%20Store/adminpanel/partials/poster.php");
+            header("location: http://localhost/Music-Store/adminpanel/partials/poster.php");
         }
         
     }
