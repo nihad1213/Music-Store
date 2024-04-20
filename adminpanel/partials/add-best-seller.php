@@ -57,7 +57,7 @@ if (isset($_POST['submit']) || isset($bestSellerTitle) || isset($bestSellerPrice
         //Check image added or not
         if ($upload == FALSE) {
             $_SESSION['upload'] = "<div style='color: #FF0000; margin-left: 25px'>Failed to Upload Image</div>";
-            header("location: http://localhost/Music%20Store/adminpanel/partials/add-best-seller.php"); 
+            header("location: http://localhost/Music-Store/adminpanel/partials/add-best-seller.php"); 
         }
     }
 
@@ -73,10 +73,10 @@ if (isset($_POST['submit']) || isset($bestSellerTitle) || isset($bestSellerPrice
 
     if ($result == TRUE) {
         $_SESSION['add-best-seller'] = "<div style='color: #20914f; margin-left: 25px'>Best Seller Added Succesfully</div>";
-        header("location: http://localhost/Music%20Store/adminpanel/partials/best-seller.php");
+        header("location: http://localhost/Music-Store/adminpanel/partials/best-seller.php");
     } else {
         $_SESSION['add-best-seller'] = "<div style='color: #FF0000; margin-left: 25px'>Failed to Add Best Seller</div>";
-        header("location: http://localhost/Music%20Store/adminpanel/partials/best-seller.php");
+        header("location: http://localhost/Music-Store/adminpanel/partials/best-seller.php");
     }
 
 }
