@@ -18,9 +18,9 @@ $result = mysqli_query($connection, $sql);
 
 if ($result == TRUE) {
     $_SESSION['delete'] = "<div style='color: #20914f; margin-left: 25px'>Admin Deleted Succesfully</div>";
-    header("location: http://localhost/Music%20Store/adminpanel/partials/adminpage.php");
+    header("location: http://localhost/Music-Store/adminpanel/partials/adminpage.php");
 } else {
     $_SESSION['delete'] = "<div style='color: #FF0000; margin-left: 25px'>Failed to Delete Admin</div>";
-    header("location: http://localhost/Music%20Store/adminpanel/partials/adminpage.php");
+    header("location: http://localhost/Music-Store/adminpanel/partials/adminpage.php");
 }
 ?>
