@@ -72,16 +72,16 @@ include_once "../../data/connection.php";
 
         if ($result == TRUE) {
             $_SESSION['edit'] = "<div style='color: #20914f; margin-left: 25px'>Admin Edited Succesfully</div>"; 
-            header("location: http://localhost/Music%20Store/adminpanel/partials/adminpage.php");
+            header("location: http://localhost/Music-Store/adminpanel/partials/adminpage.php");
         } else {
             $_SESSION['edit'] = "<div style='color: #FF0000; margin-left: 25px'>Failed to Edit Admin</div>";
-            header("location: http://localhost/Music%20Store/adminpanel/partials/adminpage.php");
+            header("location: http://localhost/Music-Store/adminpanel/partials/adminpage.php");
         }
 
         //Show Error when new passwords doesn't match
         if ($newAdminPassword != $confirmNewAdminPassword) {
             $_SESSION['admin-pass-dont-match'] = "<div style='color: #FF0000; margin-left: 25px'>Passwords don't Match!</div>";
-            header("location: http://localhost/Music%20Store/adminpanel/partials/edit-admin.php?adminID=$adminID");
+            header("location: http://localhost/Music-Store/adminpanel/partials/edit-admin.php?adminID=$adminID");
         }
 
     }
