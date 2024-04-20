@@ -14,9 +14,9 @@
 
     if ($result == TRUE) {
         $_SESSION['delete-ds-items'] = "<div style='color: #20914f; margin-left: 25px'>Product Deleted Succesfully</div>";
-        header("location: http://localhost/Music%20Store/adminpanel/partials/ds-items.php");
+        header("location: http://localhost/Music-Store/adminpanel/partials/ds-items.php");
     } else {
         $_SESSION['delete-ds-items'] = "<div style='color: #FF0000; margin-left: 25px'>Failed to Delete Product</div>";
-        header("location: http://localhost/Music%20Store/adminpanel/partials/ds-items.php");
+        header("location: http://localhost/Music-Store/adminpanel/partials/ds-items.php");
     }
 ?>
