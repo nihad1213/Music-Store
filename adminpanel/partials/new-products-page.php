@@ -66,7 +66,7 @@
                         if ($row['productImage'] != '0') {
                             
                             ?>
-                                <img style="width: 20%" src="<?php echo "http://localhost/Music%20Store/";?>assets/newproducts/<?php echo $row['productImage'];?>">
+                                <img style="width: 20%" src="<?php echo "http://localhost/Music-Store/";?>assets/newproducts/<?php echo $row['productImage'];?>">
                             <?php
 
                         } else {
