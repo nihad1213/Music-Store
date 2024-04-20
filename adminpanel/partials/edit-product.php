@@ -76,7 +76,7 @@
             //Check Image added or not
             if ($upload == FALSE) {
                 $_SESSION['upload-image'] = "<div style='color: #FF0000; margin-left: 25px'>Failed to Upload Image</div>";
-                header("location: http://localhost/Music%20Store/adminpanel/partials/edit-product.php");
+                header("location: http://localhost/Music-Store/adminpanel/partials/edit-product.php");
             }
         
         }
@@ -95,10 +95,10 @@
 
         if ($result2 == TRUE) {
             $_SESSION['edit-product'] = "<div style='color: #20914f; margin-left: 25px'>Product Edited Succesfully</div>";
-            header("location: http://localhost/Music%20Store/adminpanel/partials/new-products-page.php");
+            header("location: http://localhost/Music-Store/adminpanel/partials/new-products-page.php");
         } else {
             $_SESSION['edit-product'] = "<div style='color: #FF0000; margin-left: 25px'>Failed to Edit Product</div>";
-            header("location: http://localhost/Music%20Store/adminpanel/partials/new-products-page.php");
+            header("location: http://localhost/Music-Store/adminpanel/partials/new-products-page.php");
         }
         
     }
