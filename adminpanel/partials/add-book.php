@@ -57,7 +57,7 @@ if (isset($_POST['submit']) || isset($bookTitle) || isset($bookPrice) || isset($
         //Check image added or not
         if ($upload == FALSE) {
             $_SESSION['upload'] = "<div style='color: #FF0000; margin-left: 25px'>Failed to Upload Image</div>";
-            header("location: http://localhost/Music%20Store/adminpanel/partials/add-book.php"); 
+            header("location: http://localhost/Music-Store/adminpanel/partials/add-book.php"); 
         }
     }
 
@@ -73,10 +73,10 @@ if (isset($_POST['submit']) || isset($bookTitle) || isset($bookPrice) || isset($
 
     if ($result == TRUE) {
         $_SESSION['add-book'] = "<div style='color: #20914f; margin-left: 25px'>Book/Magazine Added Succesfully</div>";
-        header("location: http://localhost/Music%20Store/adminpanel/partials/book.php");
+        header("location: http://localhost/Music-Store/adminpanel/partials/book.php");
     } else {
         $_SESSION['add-book'] = "<div style='color: #FF0000; margin-left: 25px'>Failed to Add Book/Magazine</div>";
-        header("location: http://localhost/Music%20Store/adminpanel/partials/book.php");
+        header("location: http://localhost/Music-Store/adminpanel/partials/book.php");
     }
 
 }
