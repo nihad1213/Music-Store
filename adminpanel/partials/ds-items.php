@@ -64,7 +64,7 @@ $result = mysqli_query($connection, $sql);
                         if ($row['dsItemsImage'] != '0') {
                             
                             ?>
-                                <img style="width: 20%" src="<?php echo "http://localhost/Music%20Store/";?>assets/dsitems/<?php echo $row['dsItemsImage'];?>">
+                                <img style="width: 20%" src="<?php echo "http://localhost/Music-Store/";?>assets/dsitems/<?php echo $row['dsItemsImage'];?>">
                             <?php
 
                         } else {
