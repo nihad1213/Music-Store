@@ -76,7 +76,7 @@
             //Check Image added or not
             if ($upload == FALSE) {
                 $_SESSION['upload-image'] = "<div style='color: #FF0000; margin-left: 25px'>Failed to Upload Image</div>";
-                header("location: http://localhost/book%20Store/adminpanel/partials/edit-book.php");
+                header("location: http://localhost/Music-Store/adminpanel/partials/edit-book.php");
             }
         
         }
@@ -95,10 +95,10 @@
 
         if ($result2 == TRUE) {
             $_SESSION['edit-book'] = "<div style='color: #20914f; margin-left: 25px'>Book/Magazine Edited Succesfully</div>";
-            header("location: http://localhost/Music%20Store/adminpanel/partials/book.php");
+            header("location: http://localhost/Music-Store/adminpanel/partials/book.php");
         } else {
             $_SESSION['edit-book'] = "<div style='color: #FF0000; margin-left: 25px'>Failed to Edit Book/Magazine</div>";
-            header("location: http://localhost/Music%20Store/adminpanel/partials/book.php");
+            header("location: http://localhost/Music-Store/adminpanel/partials/book.php");
         }
         
     }
