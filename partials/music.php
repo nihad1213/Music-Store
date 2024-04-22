@@ -26,7 +26,7 @@ include_once "../data/connection.php";
                     $imageName = $row['musicImage'];
             ?>
                 <div class="card" style="width: 15rem;">
-                    <img style="margin-top: 8px" class="card-img-top" src="<?php echo "http://localhost/Music%20Store/";?>assets/music/<?php echo $row['musicImage'];?>" alt="Card image cap">
+                    <img style="margin-top: 8px" class="card-img-top" src="<?php echo "http://localhost/Music-Store/";?>assets/music/<?php echo $row['musicImage'];?>" alt="Card image cap">
                         <div class="card-body">
                             <h5 class="card-title"><?php echo $musicTitle ?></h5>
                             <p class="card-text">
